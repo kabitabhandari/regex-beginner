@@ -12,6 +12,7 @@ public class Regex {
     public static void main(String[] args) {
         // The regex pattern
         final String REGEX_PATTERN = "fooa*bar";
+        //file should be placed inside folder resource
         final String regexFileName = "regFile1.txt";
 
         // Create a Pattern object
@@ -39,6 +40,7 @@ public class Regex {
                 }
 
             }
+            bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
